@@ -1,7 +1,10 @@
 import axios from 'axios'
 
-const SERVER = 'http://localhost:2222'
-axios.defaults.headers.common['Content-Type'] = 'application/json';
+let SERVER = 'http://forum-agricultura-be.herokuapp.com'
+if(process.env.NODE_ENV === 'development'){
+  SERVER = 'http://forum-agricultura-be.herokuapp.com'
+  //SERVER = 'http://localhost:2020'
+}
 
 
 export async function get(url, params) {
