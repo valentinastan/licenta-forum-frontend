@@ -1,0 +1,63 @@
+.createPost {
+    margin: 10% 0 5%;
+}
+
+.createPost div {
+    margin: 0 2%;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+}
+
+.createPost textarea {
+    outline: none;
+    border: 3px solid black;
+    width: 50%;
+    border-radius: 6px;
+}
+
+button{
+    display:inline-block;
+    background-color: #DCEDC8;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: 0.9em;
+    color: green;
+    text-align:center;
+    transition: all 0.2s;
+    margin: 0 2%;
+}
+
+button:hover{
+    color:#000000;
+    background-color:rgb(223, 151, 70);
+}
+
+.posts .previewPost {
+    margin: 1% 1% 4% 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #FFE082;
+    background: rgba(34,72,49, 0.6);
+}
+
+.posts .previewPost div, a {
+    text-align: justify;
+    padding: 2%;
+    color:#FFECB3;
+}
+
+.posts .previewPost a {
+    text-decoration: none;
+    color: #FFC107;
+}
+
+.posts .previewPost a:hover {
+    text-decoration: none;
+    color: #FF8F00;
+}
+

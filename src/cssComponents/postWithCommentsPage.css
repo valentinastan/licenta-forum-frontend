@@ -1,0 +1,92 @@
+.post, .comment {
+    margin: 5% 20%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #FFE082;
+    background: rgba(34,72,49, 0.6);
+}
+
+.comment {
+    margin-top: 5px;
+}
+
+.post, .comment div {
+    text-align: justify;
+    padding: 3%;
+    color:#FFECB3;
+}
+
+.comment div {
+    padding: 1%;
+}
+
+p {
+    margin-left: 20%;
+    color:#FFECB3;
+    
+}
+
+button.like{
+    width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 50%;
+	color: rgba(0,150,136 ,1);
+	background-color:rgba(38,166,154 ,0.3);
+	border-color: rgba(0,150,136 ,1);
+	border-width: 1px;
+    font-size: 15px;
+    padding: 0;
+}
+
+button.dislike{
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	border-radius: 50%;
+	color: rgba(255,82,82 ,1);
+	background-color: rgba(255,138,128 ,0.3);
+	border-color: rgba(255,82,82 ,1);
+	border-width: 1px;
+    font-size: 15px;
+    padding: 0;
+}
+
+.comment .reactions {
+    display: -webkit-box;
+}
+
+.comment .reactions div {
+    font-weight: bold;
+    font-size: 1em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.comment .reactions .likesNr {
+    color: darkgreen;
+}
+
+.comment .reactions .dislikesNr {
+    color: firebrick;
+}
+
+.deleteButton {
+    margin-left: 80%;;
+}
+
+.createComment textarea {
+    outline: none;
+    border: 3px solid black;
+    width: 50%;
+    border-radius: 6px;
+}
+
+.createComment {
+    margin: 0 0 5% 20%;
+}
+
+.createComment div {
+    color:#FFECB3;
+    margin: 0 2%;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+}
