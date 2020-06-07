@@ -40,6 +40,7 @@ button:hover{
 
 .posts .previewPost {
     margin: 1% 1% 4% 0;
+    padding: 3%;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #FFE082;
     background: rgba(34,72,49, 0.6);
