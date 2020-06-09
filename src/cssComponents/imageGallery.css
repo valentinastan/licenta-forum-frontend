@@ -1,0 +1,38 @@
+.imageGallery {
+	position: relative;
+	top: 19.5%;
+	color: #DCEDC8;
+	z-index: -1;
+	display: flex;
+}
+
+.leftImageGallery {
+	position: absolute;
+	width: 20.7%;
+	margin-top: 22%;
+	margin-left: 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.rightImageGallery {
+	position: absolute;
+	width: 20.7%;
+	margin-top: 22%;
+	margin-left: 77.5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.images {
+
+}
+
+img {
+	border-width:5px;  
+	border-style:dotted solid;
+}
+
+.desc {
+	margin: 0 0 80px 20px;
+}

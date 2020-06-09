@@ -1,19 +1,45 @@
 import React from 'react'
-import rasad2 from '../images/rasad2.jpg'
+import images from '../helpers/images'
 
-const ImageGallery = () => {
+const ImageGallery = (props) => {
+
+  let leftImages = images.splice(0, images.length/2 -1)
+  let rightImages = images
+
+
   return(
     <div className="imageGallery">
-      <React.Fragment>
-        <div className="leftImageGallery">
-          <a target="_blank" href={rasad2}>
-            <img src={rasad2} alt="Rasad2020" width="23%" height="200"></img ></a>
-          <div class="desc">Add a description of the image here</div>
-        </div>
+      <div className="leftImageGallery">
+        {
+          leftImages.map(({id, src, title, description}) => {
+            return (
+              <div className="images">
+                <a target="_blank" href={src}>
+                <img key={id} src={src} title={title} alt={description} width="90%" />
+                </a>
+                <div class="desc">{description}</div> 
+              </div>
+          )})
+        }
+      </div>
 
-        <div className="rightImageGallery">
-        </div> 
-      </React.Fragment>
+      <div className="mainContainer">
+        {props.children}
+      </div>
+
+      <div className="rightImageGallery">
+        {
+          rightImages.map(({id, src, title, description}) => {
+            return (
+              <div className="images">
+                <a target="_blank" href={src}>
+                <img key={id} src={src} title={title} alt={description} width="90%" />
+                </a>
+                <div class="desc">{description}</div> 
+              </div>
+          )})
+        }
+      </div>
     </div>
   )
 }
