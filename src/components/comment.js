@@ -1,17 +1,25 @@
 import React from 'react'
-import {postLikeCommentsQuery, postDeleteCommentsQuery} from '../requests/comments'
 import { useDispatch } from '../state-management/stores/store'
+import { likeCommentQuery,  dislikeCommentQuery, postDeleteCommentsQuery} from '../requests/comments'
 
 const Comment = (props) => {
   console.log('props', props)
   const dispatch = useDispatch()
 
-  const updateLike = () => {
-    postLikeCommentsQuery({
-      id: props.id,
-      likes: props.likes
+  const likeComment = () => {
+    likeCommentQuery({
+      commentId: props.id,
     }).then((comment) => dispatch({
-      type: 'UPDATE_LIKE',
+      type: 'UPDATE_COMMENT',
+      comment,
+    }))
+  }
+
+  const dislikeComment = () => {
+    dislikeCommentQuery({
+      commentId: props.id,
+    }).then((comment) => dispatch({
+      type: 'UPDATE_COMMENT',
       comment,
     }))
   }
@@ -19,9 +27,9 @@ const Comment = (props) => {
   const deleteComment = () => {
     postDeleteCommentsQuery({
       id: props.id,
-    }).then((comment) => dispatch({
+    }).then(() => dispatch({
       type: 'DELETE',
-      comment,
+      id: props.id,
     }))
   }
 
@@ -31,14 +39,14 @@ const Comment = (props) => {
         <div>{props.userId}</div>
         <div>{props.text}</div>
         <div className='reactions'>
-          <button className='like' onClick={updateLike}>
+          <button className='like' onClick={likeComment}>
             <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>
           </button>
           <div className='likesNr'>{props.likes}</div>
-          <button className='dislike'>
+          <button className='dislike' onClick={dislikeComment}>
             <i className="fa fa-thumbs-o-down" aria-hidden="true"></i>
           </button>
-          <div className='dislikesNr'>{props.likes}</div>
+          <div className='dislikesNr'>{props.dislikes}</div>
         </div>
         <button className='deleteButton' onClick={deleteComment}>Delete comment</button>
       </div>

@@ -6,14 +6,20 @@ export async function postCommentsQuery(params) {
   return comment.data
 }
 
-export async function postLikeCommentsQuery(params) {
-  let comment = await post(`api/comment/${params.id}/like`, params)
+export async function likeCommentQuery(params) {
+  let comment = await post(`api/comment/${params.commentId}/like`)
+
+  return comment.data
+}
+
+export async function dislikeCommentQuery(params) {
+  let comment = await post(`api/comment/${params.commentId}/dislike`)
 
   return comment.data
 }
 
 export async function postDeleteCommentsQuery(params) {
-  let comment = await post(`api/comment/${params.id}/delete`, params)
+  let comment = await post(`api/posts/${params.id}/comment/delete`, params)
 
   return comment.data
 }

@@ -1,4 +1,5 @@
 .forum {
     color: #DCEDC8;
     margin: 3% 25%;
+    z-index: 99;
 }

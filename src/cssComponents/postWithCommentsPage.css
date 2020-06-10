@@ -1,5 +1,5 @@
 .post, .comment {
-    margin: 5% 20%;
+    margin: 5% 24%;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #FFE082;
     background: rgba(34,72,49, 0.6);
@@ -81,7 +81,7 @@ button.dislike{
 }
 
 .createComment {
-    margin: 0 0 5% 20%;
+    margin: 0 0 5% 24%;
 }
 
 .createComment div {
