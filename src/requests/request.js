@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-// let SERVER = 'http://forum-agricultura-be.herokuapp.com'
-// if(process.env.NODE_ENV === 'development'){
-//   SERVER = 'http://forum-agricultura-be.herokuapp.com'
-  let SERVER = 'http://localhost:2020'
-// }
+let SERVER = 'http://forum-agricultura-be.herokuapp.com'
+if(process.env.NODE_ENV === 'development'){
+  SERVER = 'http://forum-agricultura-be.herokuapp.com'
+  // let SERVER = 'http://localhost:2020'
+}
 
 
 export async function get(url, params) {
