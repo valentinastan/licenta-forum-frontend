@@ -3,7 +3,7 @@ import images from '../helpers/images'
 
 const ImageGallery = (props) => {
 
-  let leftImages = images.splice(0, images.length/2 -1)
+  let leftImages = images.splice(0, images.length/2)
   let rightImages = images
 
 

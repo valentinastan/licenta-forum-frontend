@@ -36,8 +36,8 @@ const Comment = (props) => {
   return (
     <React.Fragment>
       <div className='comment'>
-        <div>{props.userId}</div>
         <div>{props.text}</div>
+        <div>{props.sentiment}</div>
         <div className='reactions'>
           <button className='like' onClick={likeComment}>
             <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>

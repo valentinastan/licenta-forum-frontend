@@ -16,26 +16,32 @@ import rosii from '../images/rosii.jpeg'
 import rosiilePeRod from '../images/rosiilePeRod.jpeg'
 import solarApus from '../images/solarApus.jpeg'
 import solarIunie from '../images/solarIunie.jpeg'
+import capia from '../images/capia.jpeg'
+import ciorchine from '../images/ciorchine.jpeg'
+import pisi from '../images/pisi.jpeg'
+import gras from '../images/gras.jpeg'
+import rosie from '../images/rosieCoapta.jpeg'
 
 const images = [
     { id: 1, src: rasad2, title: 'Rasad-febr', description: 'Rasad legume februarie-2020' },
-    { id: 2, src: rasadMare, title: 'Rasad-martie', description: 'Rasad legume martie-2020' },
-    { id: 3, src: rasad, title: 'foo', description: 'bar' },
-    { id: 4, src: ardei, title: 'foo', description: 'Ardei' },
-    { id: 5, src: euSolarN, title: 'foo', description: 'bar' },
-    { id: 6, src: ardeiSolar, title: 'foo', description: 'Ardei' },
-    { id: 7, src: euSapca, title: 'foo', description: 'Ardei' },
-    { id: 8, src: ate, title: 'foo', description: 'Ardei' },
-    { id: 9, src: solarIunie, title: 'foo', description: 'Ardei' },
-    { id: 10, src: picurareSolar, title: 'foo', description: 'Ardei' },
-    { id: 11, src: euZiSapat, title: 'foo', description: 'Ardei' },
-    { id: 12, src: invSolar, title: 'foo', description: 'Ardei' },
-    { id: 13, src: solarApus, title: 'foo', description: 'Ardei' },
-    { id: 14, src: rosii, title: 'foo', description: 'Ardei' },
-    { id: 15, src: rosieZoom, title: 'foo', description: 'Ardei' },
-    { id: 16, src: rasadMaricel, title: 'foo', description: 'Ardei' },
-    { id: 17, src: castraveti, title: 'foo', description: 'Ardei' },
-    { id: 18, src: rosiilePeRod, title: 'foo', description: 'Ardei' },
+    { id: 2, src: rasad, title: 'Rasad', description: 'Rasad in Las Fierbinti' },
+    { id: 3, src: rasadMare, title: 'Rasad-martie', description: 'Rasad legume martie-2020' },
+    { id: 4, src: ardei, title: 'Ardei', description: 'Ardei plantat in solar' },
+    { id: 5, src: euSolarN, title: 'Valentina', description: 'Valentina' },
+    { id: 6, src: ate, title: 'Ate', description: 'Legume plantate in solar' },
+    { id: 7, src: euSapca, title: 'Valentina', description: 'Valentina' }, 
+    { id: 8, src: capia, title: 'capia', description: 'Ardei capia' },
+    { id: 9, src: pisi, title: 'pisica', description: 'Ajutorul de nadejde!' },
+    { id: 10, src: rosie, title: 'foo', description: 'Prima rosie coapta, 13-iunie-2020' },
+    { id: 11, src: euZiSapat, title: 'foo', description: 'Sapand terenul pentru a planta legumele' },
+    { id: 12, src: gras, title: 'foo', description: 'Ardei gras, iunie 2020' },
+    { id: 13, src: solarApus, title: 'foo', description: 'Primul apus' },
+    { id: 14, src: solarIunie, title: 'foo', description: 'O dimineata proaspata' },
+    { id: 15, src: rosieZoom, title: 'foo', description: 'Rosiile sunt pe rod!' },
+    { id: 16, src: invSolar, title: 'foo', description: 'Un proiect realizat!' },
+    { id: 17, src: castraveti, title: 'foo', description: 'Castraveti gustosi' },
+    { id: 18, src: picurareSolar, title: 'foo', description: 'Sistemul de picurare e gata!' },
+    { id: 19, src: rosiilePeRod, title: 'foo', description: 'Rosiile din solar' }
   ];
   
   export default images;
