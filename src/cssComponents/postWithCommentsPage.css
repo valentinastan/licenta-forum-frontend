@@ -1,8 +1,8 @@
 .post, .comment {
     margin: 5% 24%;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px #FFE082;
-    background: rgba(34,72,49, 0.6);
+    box-shadow: 4px 5px 10px #33691E;
+    background-color: #C5E1A5;
 }
 
 .comment {
@@ -12,7 +12,7 @@
 .post, .comment div {
     text-align: justify;
     padding: 3%;
-    color:#FFECB3;
+    color:#415f1e;
 }
 
 .comment div {
@@ -21,7 +21,7 @@
 
 p {
     margin-left: 20%;
-    color:#FFECB3;
+    color:#415f1e;
     
 }
 
@@ -58,7 +58,6 @@ button.dislike{
 .comment .reactions div {
     font-weight: bold;
     font-size: 1em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .comment .reactions .likesNr {
@@ -85,8 +84,9 @@ button.dislike{
 }
 
 .createComment div {
-    color:#FFECB3;
+    color:#415f1e;
     margin: 0 2%;
     font-family:'Roboto',sans-serif;
     font-weight:300;
+    font-size: 1.1em;
 }

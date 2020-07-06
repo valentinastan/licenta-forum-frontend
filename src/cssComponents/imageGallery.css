@@ -1,6 +1,4 @@
 .imageGallery {
-	color: #DCEDC8;
-	/* z-index: -1; */
 	display: flex;
 	width: 100%;
 }
@@ -36,7 +34,10 @@ img {
 }
 
 .desc {
-	margin: 0 0 80px 20px;
+	margin: 2% 0 20% 4%;
+	color: #558B2F;
+	font-style: italic;
+	text-shadow: 2px 2px 20px;
 }
 
 .imgTag {

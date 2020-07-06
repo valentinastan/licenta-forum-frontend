@@ -1,12 +1,15 @@
 .createPost {
-    margin: 5% 0 5% 22%;
+    margin: 9% 0 2% 22%;
     align-self: flex-start;
 }
 
 .createPost div {
     margin: 0 2%;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: large;
+    text-shadow: 0px 0px 8px #9CCC65;
 }
 
 .createPost textarea {
@@ -43,23 +46,25 @@ button:hover{
     margin: 1% 1% 4% 0;
     padding: 3%;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px #FFE082;
-    background: rgba(34,72,49, 0.6);
+    box-shadow: 4px 5px 10px #33691E;
+    background-color: #C5E1A5;
 }
 
 .posts .previewPost div, a {
+    font-size: 1.1em;
     text-align: justify;
     padding: 2%;
-    color:#FFECB3;
+    color:#415f1e;
 }
 
 .posts .previewPost a {
     text-decoration: none;
-    color: #FFC107;
+    color: #BF360C;
 }
 
 .posts .previewPost a:hover {
     text-decoration: none;
-    color: #FF8F00;
+    color: #BF360C;
+    font-size: 1.5em;
 }
 
