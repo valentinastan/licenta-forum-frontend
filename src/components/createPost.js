@@ -25,9 +25,9 @@ const CreatePost = () => {
     <React.Fragment>
       <div className='createPost'>
         <div>Introduceti titlul</div>
-        <textarea id="newTitle" rows="2" cols="30" onChange={(event) => setState({...state, titlePost: event.target.value})}></textarea> <br/>
+        <textarea id="newTitle" rows="2" cols="55" onChange={(event) => setState({...state, titlePost: event.target.value})}></textarea> <br/>
         <div>Introduceti textul</div>
-        <textarea id="newText" rows="4" cols="30" onChange={(event) => setState({...state, textPost: event.target.value})}></textarea> <br/>
+        <textarea id="newText" rows="4" cols="55" onChange={(event) => setState({...state, textPost: event.target.value})}></textarea> <br/>
         <button type='button' onClick={sendPost}>Adauga</button>
       </div>
     </React.Fragment>

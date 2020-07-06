@@ -2,6 +2,7 @@ import React from 'react'
 import {useDispatch, useState} from '../state-management/stores/store'
 import {getPostsRequest} from '../requests/posts'
 import CreatePost from './createPost'
+import ImageGallery from './imageGallery'
 import PreviewPost from './previewPost'
 
 
@@ -26,13 +27,15 @@ const Posts = () => {
   }, [])
 
   return(
-    <React.Fragment>
+    <div className="postsContainer">
       <h1>Forumul agricultorului</h1>
       <CreatePost></CreatePost>
-      <div className='posts'>
-        {(posts || []).map((el) => <PreviewPost key={`post_${el.id}`} {...el}></PreviewPost>) }
-      </div>
-    </React.Fragment>
+      <ImageGallery>
+        <div className='posts'>
+          {(posts || []).map((el) => <PreviewPost key={`post_${el.id}`} {...el}></PreviewPost>) }
+        </div>
+      </ImageGallery>
+    </div>
   )
 }
 

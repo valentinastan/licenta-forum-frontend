@@ -1,33 +1,29 @@
 .imageGallery {
-	position: relative;
-	top: 19.5%;
 	color: #DCEDC8;
 	/* z-index: -1; */
 	display: flex;
+	width: 100%;
 }
 
 .leftImageGallery {
-	position: absolute;
-	width: 20.7%;
-	margin-top: 22%;
-	margin-left: 2%;
 	display: flex;
 	flex-direction: column;
 	z-index: -1;
+	width: 20%;
 }
 
 .rightImageGallery {
-	position: absolute;
-	width: 20.7%;
-	margin-top: 22%;
-	margin-left: 77.5%;
 	display: flex;
 	flex-direction: column;
 	z-index: -1;
+	width: 20%;
+	margin-left: 0.5%;
 }
 
 .mainContainer {
 	z-index: 99;
+	width: 50%;
+	margin-left: 2%;
 }
 
 .images {
@@ -41,4 +37,8 @@ img {
 
 .desc {
 	margin: 0 0 80px 20px;
+}
+
+.imgTag {
+	max-width: 100%;
 }
